@@ -1,2 +1,2 @@
-# leetcode
+# General Leetcode
 brush leetcode
