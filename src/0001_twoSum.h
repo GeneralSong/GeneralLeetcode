@@ -59,7 +59,7 @@ Only one valid answer exists.
 #include <unordered_map>
 using namespace std;
 /*C++解法一*/
-class Solution
+class Solution11
 {
 public:
     vector<int> twoSum(vector<int> &nums, int target)
@@ -85,7 +85,7 @@ public:
 };
 
 /*C++解法二*/
-class Solution1
+class Solution12
 {
 public:
     vector<int> twoSum(vector<int> &nums, int target)
@@ -95,7 +95,7 @@ public:
         {
             if(m.count(target - nums[i]))
             {
-                return {i, m[target - nums[i]]}
+                return {i, m[target - nums[i]]};
             }
             m[nums[i]] = i;
         }
