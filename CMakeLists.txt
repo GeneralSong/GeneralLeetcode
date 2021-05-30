@@ -40,7 +40,7 @@ set(CMAKE_BUILD_TYPE "Release") # Release Debug
 #include_directories("${PROJECT_SOURCE_DIR}/include")
 include_directories("${PROJECT_SOURCE_DIR}/src")
 
-file(GLOB SOURCE ./src/*.cpp)
+file(GLOB SOURCE ./src/*.cpp ./src/*.h)
 
 add_definitions(-std=c++11)
 add_definitions(-D_CRT_SECURE_NO_WARNINGS)
