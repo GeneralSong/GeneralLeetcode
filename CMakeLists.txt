@@ -7,7 +7,7 @@ SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)  #设置库文件的输出目
 
 
 # use $<0:.> to make vs not append Debug/Release after the path
-set(CMAKE_BUILD_TYPE "Release") # Release Debug
+#set(CMAKE_BUILD_TYPE "Release") # Release Debug
 #set(CMAKE_DEBUG_POSTFIX "d")
 
 # you have add link directories before add target
@@ -44,10 +44,9 @@ file(GLOB SOURCE ./src/*.cpp ./src/*.h)
 
 add_definitions(-std=c++11)
 add_definitions(-D_CRT_SECURE_NO_WARNINGS)
-#add_executable(${TARGET_NAME} ${SOURCE})
-#add_executable(${TARGET_NAME} ${SOURCE}) #编译生成可执行文件
+add_executable(${TARGET_NAME} ${SOURCE}) #编译生成可执行文件
 #add_library(${TARGET_NAME} SHARED ${SOURCE} )#生成动态库
-add_library(${TARGET_NAME} STATIC ${SOURCE} )#生成静态库
+#add_library(${TARGET_NAME} STATIC ${SOURCE} )#生成静态库
 
 
 
